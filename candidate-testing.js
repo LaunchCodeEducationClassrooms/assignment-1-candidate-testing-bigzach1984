@@ -16,11 +16,11 @@ let questions = [
   'What is the minimum crew size for the ISS? '
   ];
 let correctAnswers = [
-  'Sally Ride'.toLowerCase(), 
-  'True'.toLowerCase(), 
-  '40'.toLowerCase(), 
-  'Trajectory'.toLowerCase(), 
-  '3'.toLowerCase()
+  'Sally Ride', 
+  'True', 
+  '40', 
+  'Trajectory', 
+  '3'
   ];
 let candidateAnswers = [];
 
