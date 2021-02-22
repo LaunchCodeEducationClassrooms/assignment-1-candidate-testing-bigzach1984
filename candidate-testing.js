@@ -9,7 +9,7 @@ let question = 'Who was the first American woman in space? ';
 let correctAnswer = 'Sally Ride';
 let candidateAnswer = '';
 let questions = ['Who was the first American woman in space? ', 'True or false: 5 kilometer == 5000 meters? ', '(5 + 3)/2 * 10 = ? ', "Given the array [8, 'Orbit', 'Trajectory', 45], what entry is at index 2? ", 'What is the minimum crew size for the ISS? '];
-let correctAnswers = ['Sally Ride'.toLowerCase(), 'true'.toLowerCase(), '40'.toLowerCase(), 'Trajectory'.toLowerCase(), '3'.toLowerCase()];
+let correctAnswers = ['Sally Ride', 'true', '40', 'Trajectory', '3'];
 let candidateAnswers = [];
 
 
@@ -35,7 +35,7 @@ function gradeQuiz(candidateAnswers) {
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
   let questionOne = '';
-  if (candidateAnswers[0] === correctAnswers[0]) {
+  if (candidateAnswers[0].toLowerCase() === correctAnswers[0].toLowerCase()) {
     console.log(questions[0]);
     console.log(`(1) Your answer: ${candidateAnswers[0]} \nMatches the correct answer: ${correctAnswers[0]}\n`);
     questionOne = 1;
@@ -46,7 +46,7 @@ function gradeQuiz(candidateAnswers) {
     }
 
   let questionTwo = '';
-  if (candidateAnswers[1] === correctAnswers[1]) {
+  if (candidateAnswers[1].toLowerCase() === correctAnswers[1].toLowerCase()) {
     console.log(questions[1]);
     console.log(`(2) Your answer: ${candidateAnswers[1]} \nMatches the correct answer: ${correctAnswers[1]}\n`);
     questionTwo = 1;
@@ -57,7 +57,7 @@ function gradeQuiz(candidateAnswers) {
   }   
 
   let questionThree = '';
-  if (candidateAnswers[2] === correctAnswers[2]) {
+  if (candidateAnswers[2].toLowerCase() === correctAnswers[2].toLowerCase()) {
     console.log(questions[2]);
     console.log(`(3) Your answer: ${candidateAnswers[2]} \nMatches the correct answer: ${correctAnswers[2]}\n`);
     questionThree = 1;
@@ -68,7 +68,7 @@ function gradeQuiz(candidateAnswers) {
   }  
   
   let questionFour = '';
-  if (candidateAnswers[3] === correctAnswers[3]) {
+  if (candidateAnswers[3].toLowerCase() === correctAnswers[3].toLowerCase()) {
     console.log(questions[3]);
     console.log(`(4) Your answer: ${candidateAnswers[3]} \nMatches the correct answer: ${correctAnswers[3]}\n`);
     questionFour = 1;
@@ -79,7 +79,7 @@ function gradeQuiz(candidateAnswers) {
   }
   
   let questionFive = ''
-  if (candidateAnswers[4] === correctAnswers[4]) {
+  if (candidateAnswers[4].toLowerCase() === correctAnswers[4].toLowerCase()) {
     console.log(questions[4]);
     console.log(`(5) Your answer: ${candidateAnswers[4]} \nMatches the correct answer: ${correctAnswers[4]}\n`);
     questionFive = 1;
