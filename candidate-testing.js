@@ -5,7 +5,7 @@ const input = require('readline-sync');
 // TODO 1.1a: Define candidateName // 
 let candidateName = '';
 // TODO 1.2a: Define question, correctAnswer, and candidateAnswer //
-let question;
+let question = 'Who was the first American woman in space? ';
 let correctAnswer = 'Sally Ride';
 let candidateAnswer = '';
 let questions = [
@@ -34,13 +34,15 @@ function askForName() {
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
   for (let i = 0; i < questions.length; i++) {
-    candidateAnswers = candidateAnswers.concat(input.question(questions[i]).toLowerCase());
+    candidateAnswer = candidateAnswer;
+    candidateAnswer = input.question(questions[i]);
+    candidateAnswers.push(candidateAnswer.toLowerCase());
     
   }
 
 }
 
-function gradeQuiz() {
+function gradeQuiz(candidateAnswers) {
 
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
   
